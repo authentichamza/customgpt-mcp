@@ -1,1 +1,2 @@
 customgpt-client
+mcp[cli]

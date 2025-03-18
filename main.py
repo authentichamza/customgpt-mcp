@@ -10,7 +10,7 @@ import json
 load_dotenv()
 
 # Initialize MCP server
-mcp = FastMCP("CustomGPT-Integration")
+mcp = FastMCP("CustomGPT-Integration", dependencies=["mcp", "customgpt-client"])
 CustomGPT.api_key = os.getenv("CUSTOMGPT_API_KEY")
 CustomGPT.base_url = os.getenv("CUSTOMGPT_BASE_URL")
 
